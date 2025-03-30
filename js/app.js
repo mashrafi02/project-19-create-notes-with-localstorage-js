@@ -32,3 +32,13 @@ notesContainer.addEventListener('click', e => {
         })
     }
 })
+
+
+
+// adding this portion to avoid unneccessary prblems for adding new line
+document.addEventListener('keydown', e =>{
+    if(e.key == 'Enter'){
+        document.execCommand('insertLineBreak')
+        e.preventDefault()
+    }
+})
